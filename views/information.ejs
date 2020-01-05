@@ -1,0 +1,28 @@
+<%- include('includes/header.ejs'); %>
+<div class="movebox">
+    <span class="b1">1</span>
+    <span class="b2">asdf</span>
+</div>
+
+
+<style>
+.movebox{
+    position:absolute;
+    animation-name: conative;
+    animation-duration:2s;
+    animation-duration: leaner;
+    animation-iteration-count:1;
+    /* animation-direction:alternate; 돌아가게해줌 */
+    animation-fill-mode: forwards;
+    /* animation-delay:1s; 대기시간 */
+}
+
+/* 키프레임 이름 = 애니메이션 이름 */
+@-webkit-keyframes conative {
+  0% {
+    left:500px;
+  }
+  100% {
+    left:0px;
+  }
+}</style>

@@ -1,2 +1,78 @@
 <%- include('includes/header.ejs'); %>
 
+
+
+
+<div class="movebox">
+    <div class="card-group" >
+        <div class="card text-white bg-secondary mb-3">
+          <img src="images/cute.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">귀여운 댕댕이</h5>
+            <p class="card-text">ㅇㅈ? ㅇㅇㅈ</p>
+            <button type="button" class="btn btn-dark">댕댕이 더 보기</button>
+          </div>
+          <div class="card-footer">
+            <small class="card-text">3분 전 수정함</small>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-3">
+            <img src="images/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">으윽 귀여운 곰냠미</h5>
+              <p class="card-text">심장에 해롭습니다</p>
+              <button type="button" class="btn btn-dark">곰먐미 더 보기</button>
+            </div>
+            <div class="card-footer">
+              <small class="card-text">5분 전 수정함</small>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <img src="images/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">여기가 지구다</h5>
+              <p class="card-text">지구 개꿀</p>
+              <button type="button" class="btn btn-dark">무엇이 개꿀인지 더 보기</button>
+            </div>
+            <div class="card-footer">
+              <small class="card-text">13분 전 수정함</small>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3">
+            <img src="images/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">비가 안오는데..</h5>
+              <p class="card-text">우산을 들고있누..</p>
+              <button type="button" class="btn btn-dark">멍청이 더 보기</button>
+            </div>
+            <div class="card-footer">
+              <small class="card-text">3분 전 수정함</small>
+            </div>
+          </div>
+
+</div>
+
+
+<style>
+.movebox{
+    position:absolute;
+    animation-name: conative;
+    animation-duration:2s;
+    animation-duration: leaner;
+    animation-iteration-count:1;
+    /* animation-direction:alternate; 돌아가게해줌 */
+    animation-fill-mode: forwards;
+    /* animation-delay:1s; 대기시간 */
+}
+.movebox .card{ display: flex;
+}
+
+/* 키프레임 이름 = 애니메이션 이름 */
+@-webkit-keyframes conative {
+  0% {
+    left:500px;
+  }
+  100% {
+    left:0px;
+  }
+}</style>
